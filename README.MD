@@ -7,4 +7,4 @@
 ### Contact Me   
 ***
 * Github: [GroverZhu](https://github.com/GroverZhu/)   
-* Email: groverzhu@gmail.com or 105791849@mial.nwpu.edu.cn
+* Email: groverzhu@gmail.com or 105791849@mail.nwpu.edu.cn
