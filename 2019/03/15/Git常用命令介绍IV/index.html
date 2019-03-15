@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Git,">
+  <meta name="keywords" content="git,">
 
 
 
@@ -79,26 +79,28 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;在使用git的过程中，并不是每一次的add，commit都是你所预期要提交的，总有失手的时候，有可能你在add的时候你多加了个文件，或者commit之后你后悔了，觉得这次的提交不应该包含这么多的东西。Git的设计还是很友好的，让你有后悔的机会去改正。    &amp;emsp;&amp;emsp;介绍几个常见的情形：     你在一次任务完成后，你要提交代码，使用git add .命令，在">
-<meta name="keywords" content="Git">
+<meta name="description" content="&amp;emsp;&amp;emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。&amp;emsp;&amp;emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git常用命令介绍Ⅲ">
-<meta property="og:url" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/index.html">
+<meta property="og:title" content="Git常用命令介绍Ⅳ">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/index.html">
 <meta property="og:site_name" content="GroverZhu">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;在使用git的过程中，并不是每一次的add，commit都是你所预期要提交的，总有失手的时候，有可能你在add的时候你多加了个文件，或者commit之后你后悔了，觉得这次的提交不应该包含这么多的东西。Git的设计还是很友好的，让你有后悔的机会去改正。    &amp;emsp;&amp;emsp;介绍几个常见的情形：     你在一次任务完成后，你要提交代码，使用git add .命令，在">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。&amp;emsp;&amp;emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/1.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/2.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/3.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/4.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/5.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/6.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/7.jpg">
-<meta property="og:updated_time" content="2019-02-28T14:41:22.851Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/01.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/02.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/03.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/04.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/05.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/06.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/07.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/08.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/09.jpg">
+<meta property="og:updated_time" content="2019-03-15T08:19:18.285Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git常用命令介绍Ⅲ">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;在使用git的过程中，并不是每一次的add，commit都是你所预期要提交的，总有失手的时候，有可能你在add的时候你多加了个文件，或者commit之后你后悔了，觉得这次的提交不应该包含这么多的东西。Git的设计还是很友好的，让你有后悔的机会去改正。    &amp;emsp;&amp;emsp;介绍几个常见的情形：     你在一次任务完成后，你要提交代码，使用git add .命令，在">
-<meta name="twitter:image" content="http://yoursite.com/2019/02/18/Git常用命令介绍III/1.jpg">
+<meta name="twitter:title" content="Git常用命令介绍Ⅳ">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。&amp;emsp;&amp;emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/01.jpg">
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/18/Git常用命令介绍III/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/15/Git常用命令介绍IV/">
 
 
 
 
 
-  <title>Git常用命令介绍Ⅲ | GroverZhu</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Git常用命令介绍Ⅳ | GroverZhu</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -241,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/18/Git常用命令介绍III/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/Git常用命令介绍IV/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GroverZhu">
@@ -258,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git常用命令介绍Ⅲ</h1>
+          <h1 class="post-title" itemprop="name headline">Git常用命令介绍Ⅳ</h1>
         
 
         <div class="post-meta">
@@ -270,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-18T14:32:37+08:00">
-                2019-02-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-15T10:26:12+08:00">
+                2019-03-15
               </time>
             
 
@@ -307,7 +309,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  880 字
+                  1.4k 字
                 </span>
               
 
@@ -323,7 +325,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -344,23 +346,12 @@
       
 
       
-        <p>&emsp;&emsp;在使用git的过程中，并不是每一次的add，commit都是你所预期要提交的，总有失手的时候，有可能你在add的时候你多加了个文件，或者commit之后你后悔了，觉得这次的提交不应该包含这么多的东西。Git的设计还是很友好的，让你有后悔的机会去改正。   </p>
-<p>&emsp;&emsp;介绍几个常见的情形：   </p>
+        <p>&emsp;&emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。<br>&emsp;&emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分支就是master分支，一般叫做主分支。<br><img src="/2019/03/15/Git常用命令介绍IV/01.jpg"><br>&emsp;&emsp;那么你要创建自己的分支可以使用<code>git branch 分支名</code>， 创建你的分支，再通过<code>git checkout 分支名</code> 来切换到你的分支。也可以使用<code>git checkout -b 分支名</code>直接新建并进入新的分支。<br><img src="/2019/03/15/Git常用命令介绍IV/02.jpg"><br>&emsp;&emsp;创建一个分支的话，是在你当前所在这个分支的基础上，创建一个跟你当前所在分支一模一样的分支，后续的修改之类的分支互不影响。<br>&emsp;&emsp;可以通过<code>git branch</code>查看当前项目的所有分支，前面带*号的就是当前所在的分支<br><img src="/2019/03/15/Git常用命令介绍IV/03.jpg"><br>&emsp;&emsp;如果有个分支不需要了，那么，使用<code>git branch -d 分支名</code>删除分支，如果有特殊情况，要强制删除掉某一分支，使用<code>git branch -D 分支名</code>。切记不能在当前分支删除当前分支，必须切换到别的分支再执行删除操作。<br><img src="/2019/03/15/Git常用命令介绍IV/04.jpg"><br>&emsp;&emsp;与树杈不同的是，树杈一个分支分出去之后，就不会回来，但是Git的分支可以合并到任意一个分支。Git的合并是将一个分支合并到当前分支里面。一般有两种合并方式：   </p>
 <ol>
-<li>你在一次任务完成后，你要提交代码，使用<code>git add .</code>命令，在未使用commit命令之前，你觉得有一个文件现在提交太早了，那么，你可以使用<code>git rm --cached 文件名</code>， 记得要加<code>--cached</code>，表示是删除暂存区里的，如果直接使用<code>git rm</code>那么会把你本地的文件也删除掉。      <img src="/2019/02/18/Git常用命令介绍III/1.jpg">      </li>
-<li>如果你既add，又commit了, 然后稍加思考，觉得事情不对，觉得刚才的commit message写得有问题， 那么请敲下<code>git commit --amend</code>，然后就会跳到vi模式下，进行编辑你上一次的提交的信息。   <img src="/2019/02/18/Git常用命令介绍III/2.jpg">      
-<img src="/2019/02/18/Git常用命令介绍III/3.jpg">         
-&emsp;&emsp;&emsp;如上图所示，你需要修改的就是那写黄体的字，黄体字下面是你上一次提交的信息。   </li>
-<li>如果你仔细思考，发现上一次提交的是什么鬼，决定全部删掉此次的提交重来，那么你有两个选择：   <ul>
-<li>使用<code>git reset 提交的标识号</code>，先打印出你要回退的提交的标识号，使用<code>git log</code>， 或者上一篇文章里提到的<code>git log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit</code>当然正常人是不会去打这么一大长串的命令，正常的都配成别名<code>alias</code>， 比如，我要回退到下图中标记的提交，那么在控制台输入<code>git reset 96a6128</code>    <img src="/2019/02/18/Git常用命令介绍III/4.jpg">   
-<img src="/2019/02/18/Git常用命令介绍III/5.jpg">   
-你可以通过这个命令回退到任何一个你需要的版本，但是在该提交之后的所有提交后都会没有，不过，当你的终端没有关闭，你可以找到之前的log中你最近提交的标识号，然后再用<code>git reset</code>，如果只是想单纯看看那次的提交是什么，你可以使用<code>git checkout 提交的标识号</code>, 这个命令会保持所有的提交不会被删除，你要回到当前分支的最新提交，就输入<code>git checkout 分支名</code>   <img src="/2019/02/18/Git常用命令介绍III/6.jpg"></li>
-<li>使用<code>git revert 提交的标识号</code>， 这个是git生成一个新的提交，这个的提交与你要回退的提交一模一样，所以在版本控制中，更倾向与使用revert来回退版本，这样可以保留之前的所有信息。<img src="/2019/02/18/Git常用命令介绍III/7.jpg"></li>
-</ul>
-</li>
-<li>如果你在编辑一个文件，突然发现，这还不如之前写得好，但是你又记不清你之前具体写的内容，你总不能一直用<code>Ctrl + z</code>，来撤销你的操作，一直回到最初状态，在<strong>git</strong>中，用<code>git checkout 文件名</code>，就可以恢复文件。   </li>
-<li>当然一般最难受的时候就是，在你开发一个新的功能的时候，有人跟你说之前的功能有问题，你需要去修改bug，那你手头的工作还没保存下来，你也不能提交，这样会造成不必要的提交日志，你可以使用<code>git stash</code>，将你目前的工作先存放起来，当你修改完bug后要回到你之前的工作，使用<code>git stash pop</code>。</li>
+<li><code>git merge 分支名</code>，这个合并可以保留分支来源。</li>
+<li><code>git rebases 分支名</code>，将要合并的分支中新的内容直接加在当前分支后面，不会保留分支来源。   </li>
 </ol>
+<p>&emsp;&emsp;一般团队合作的话，使用<code>git merge</code>这样就可以追根溯源了，个人的话可以使用<code>git rebase</code>，这样可以使提交记录更加简洁。<br>&emsp;&emsp;同时分支也会带来冲突问题，如果两个分支同时处理一个文件，那么就会产生冲突，需要我们手动解决。<br>&emsp;&emsp;有冲突的话，Git会有提示，会在分支名的后面标<strong>MERGING</strong><br><img src="/2019/03/15/Git常用命令介绍IV/05.jpg"><br>&emsp;&emsp; 打开有冲突的文件，可以看到文件文件里面，Git都标出来了那边有冲突，<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>到<code>======</code>表示当前分支在这个文件的修改，<code>=======</code>到<code>&gt;&gt;&gt;&gt;&gt;&gt;分支名</code>表示这个这个分支对这个文件的修改，根据需要修改冲突后，再使用<code>git add</code>和<code>git commit</code>的命令之后就可以了。<br><img src="/2019/03/15/Git常用命令介绍IV/06.jpg"> <img src="/2019/03/15/Git常用命令介绍IV/07.jpg"><br>&emsp;&emsp;这样本地分支常用的操作就是这些了。剩下的就是远程的，远程的操作主要有：与远程主机创建连接，上传新的内容，从远程主机获取新的内容。<br>&emsp;&emsp;与远程主机建立连接有两种协议：SSH 和 HTTPS，这两个具体协议的区别可以自己去查询，这里只介绍如何再这两种不同的协议建立连接。<br>&emsp;&emsp;首先，HTTPS的连接方式比较简单，只需要使用<code>git clone 地址连接</code>，会让你输入账号和密码，在之后的提交中，可能你每次的提交到远程主机上都需要输入一次账号和密码，就显得有些麻烦了。<br>&emsp;&emsp;使用SSH协议，不过，你需要先生成SSH密钥，使用<code>ssh-keygen -t rsa -C 邮箱</code>，邮箱一定是你在某一平台上的注册账号留下的邮箱。后面会有让你输入，直接按‘Enter’键。上面会有生成密钥的文件目录。<br><img src="/2019/03/15/Git常用命令介绍IV/08.jpg"><br>&emsp;&emsp;之后去那个目录里面，会有一个id_rsa.pub，打开此文件，将里面的内容粘贴到相应平台设置SSH的地方，这样远程主机就能识别出你使用的这台电脑了。<br><img src="/2019/03/15/Git常用命令介绍IV/09.jpg"><br>&emsp;&emsp;与远程主机建立联系的话，如果你是现在远程主机上建立的项目，本地是空的话，可以直接使用<code>git clone</code>把项目拷贝下来。如果是本地已经有一个项目了，要放在远程主机的话，现在远程主机上建立一个空的项目，然后使用<code>git remote add 远程主机名 远程链接</code>，一般远程主机名使用origin，这样就建立好了远程联系了。<br>&emsp;&emsp;一般第一次提交的话，使用<code>git push -u origin master</code>，后续的提交的话就可以直接用<code>git push 远程主机名 本地分支名</code>，这个命令的完整格式是：<code>git push 远程主机名 本地分支名:远程分支名</code>，一般而言，远程分支名与本地分支名一致，这样便于管理。如果删除远程的一个分支的话，本地分支名就不用写了，即<code>git push 远程主机名 :远程分支名</code><br>&emsp;&emsp;从远程分支获取更新但不合并： <code>git fetch 远程主机名 远程分支名</code><br>&emsp;&emsp;从远程分支获取更新并合并：<code>git pull 远程主机名 远程分支名:本地分支名</code><br>&emsp;&emsp;上述就是Git分支的主要操作，相信你熟悉了这写操作之后就可以使用Git进行团队开发了。(注意命令中的<code>:</code>为英文的字符)</p>
 
       
     </div>
@@ -378,7 +369,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
+            <a href="/tags/git/" rel="tag"># git</a>
           
         </div>
       
@@ -391,8 +382,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/07/Git常用命令介绍II/" rel="next" title="Git常用命令介绍Ⅱ">
-                <i class="fa fa-chevron-left"></i> Git常用命令介绍Ⅱ
+              <a href="/2019/02/18/Git常用命令介绍III/" rel="next" title="Git常用命令介绍Ⅲ">
+                <i class="fa fa-chevron-left"></i> Git常用命令介绍Ⅲ
               </a>
             
           </div>
@@ -400,10 +391,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/15/Git常用命令介绍IV/" rel="prev" title="Git常用命令介绍Ⅳ">
-                Git常用命令介绍Ⅳ <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
