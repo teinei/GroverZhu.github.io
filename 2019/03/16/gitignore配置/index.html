@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp; 关于Git，对于程序员肯定不陌生，全球最大“同性交友”网站GitHub便是基于Git创建，Git与GitHub的关系，从名字上就可以看出GitHub就是基于Git的一个仓库(hub)，Git是一个分布式版本控制软件，而GitHub就是基于该版本控制软件而创建的一个网站。&amp;emsp;&amp;emsp;有些人会觉得Git与GitHub其实差不多，但实际上，如果你需要往GitHub这">
+<meta name="description" content="&amp;emsp;&amp;emsp;在使用Git进行版本管理，有时候一些文件不需要提交，但使用git status 命令后会出现未提示的文件，我们可以用.gitignore 文件对不必要的文件进行屏蔽。&amp;emsp;&amp;emsp;在Windows系统下进行配置.gitignore文件，确实有点难受。首先Windows操作系统下，直接右击鼠标无法新建一个不带文件名的文件，因此我们打开Git命令行，输入touch .">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git简介">
-<meta property="og:url" content="http://yoursite.com/2019/01/23/Git简介/index.html">
+<meta property="og:title" content=".gitignore配置">
+<meta property="og:url" content="http://yoursite.com/2019/03/16/gitignore配置/index.html">
 <meta property="og:site_name" content="GroverZhu">
-<meta property="og:description" content="&amp;emsp;&amp;emsp; 关于Git，对于程序员肯定不陌生，全球最大“同性交友”网站GitHub便是基于Git创建，Git与GitHub的关系，从名字上就可以看出GitHub就是基于Git的一个仓库(hub)，Git是一个分布式版本控制软件，而GitHub就是基于该版本控制软件而创建的一个网站。&amp;emsp;&amp;emsp;有些人会觉得Git与GitHub其实差不多，但实际上，如果你需要往GitHub这">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;在使用Git进行版本管理，有时候一些文件不需要提交，但使用git status 命令后会出现未提示的文件，我们可以用.gitignore 文件对不必要的文件进行屏蔽。&amp;emsp;&amp;emsp;在Windows系统下进行配置.gitignore文件，确实有点难受。首先Windows操作系统下，直接右击鼠标无法新建一个不带文件名的文件，因此我们打开Git命令行，输入touch .">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/01/23/Git简介/git_bash.jpg">
-<meta property="og:updated_time" content="2019-02-07T14:53:45.290Z">
+<meta property="og:updated_time" content="2019-03-16T02:14:08.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git简介">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp; 关于Git，对于程序员肯定不陌生，全球最大“同性交友”网站GitHub便是基于Git创建，Git与GitHub的关系，从名字上就可以看出GitHub就是基于Git的一个仓库(hub)，Git是一个分布式版本控制软件，而GitHub就是基于该版本控制软件而创建的一个网站。&amp;emsp;&amp;emsp;有些人会觉得Git与GitHub其实差不多，但实际上，如果你需要往GitHub这">
-<meta name="twitter:image" content="http://yoursite.com/2019/01/23/Git简介/git_bash.jpg">
+<meta name="twitter:title" content=".gitignore配置">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;在使用Git进行版本管理，有时候一些文件不需要提交，但使用git status 命令后会出现未提示的文件，我们可以用.gitignore 文件对不必要的文件进行屏蔽。&amp;emsp;&amp;emsp;在Windows系统下进行配置.gitignore文件，确实有点难受。首先Windows操作系统下，直接右击鼠标无法新建一个不带文件名的文件，因此我们打开Git命令行，输入touch .">
 
 
 
@@ -122,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/23/Git简介/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/16/gitignore配置/">
 
 
 
 
 
-  <title>Git简介 | GroverZhu</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>.gitignore配置 | GroverZhu</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -235,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/23/Git简介/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/16/gitignore配置/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GroverZhu">
@@ -252,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git简介</h1>
+          <h1 class="post-title" itemprop="name headline">.gitignore配置</h1>
         
 
         <div class="post-meta">
@@ -264,8 +262,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-23T21:01:03+08:00">
-                2019-01-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-16T10:14:15+08:00">
+                2019-03-16
               </time>
             
 
@@ -301,7 +299,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  818 字
+                  835 字
                 </span>
               
 
@@ -338,15 +336,22 @@
       
 
       
-        <p>&emsp;&emsp; 关于Git，对于程序员肯定不陌生，全球最大“同性交友”网站<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>便是基于Git创建，Git与GitHub的关系，从名字上就可以看出GitHub就是基于Git的一个仓库(hub)，Git是一个<strong>分布式版本控制软件</strong>，而GitHub就是基于该版本控制软件而创建的一个网站。<br>&emsp;&emsp;有些人会觉得Git与GitHub其实差不多，但实际上，如果你需要往GitHub这个网站上传你的代码，那么你需要通过Git该分布式版本控制软件来上传你的代码，但是你要查找别人的代码，那么你就需要从GitHub这个网站上搜索，对于网站的操作，并不会很麻烦，有图形化界面，所以我们的目标应该是先放在对Git这个分布式版本控制软件的使用。<br>&emsp;&emsp;所以在上面讲了那么多次Git是分布式版本控制软件，那么什么叫<strong>分布式</strong>，什么又叫<strong>版本控制软件</strong>。对于<strong>分布式</strong>，你可以理解为“鸡蛋不能放在同一个筐里”，<strong>版本控制</strong>可以理解为，你导师要你写一份论文，但是每次你提交论文给你的导师，他都会提一些修改，你为了避免改后的论文比之前的还要糟糕，你把每次提交的论文都保存下来，然后你的论文就变成下面这样的形式：</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>“paper1.docx”<br>“paper2.docx”<br>“paper3.docx”<br>…   </p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>&emsp;&emsp; 那么，如果你使用了版本控制软件之后，你就可以在每次修改之后把每次修改的内容写一个概要，但是你的论文文件就只有一个文件，就不会像前面那样会产生无数个文件，到最后连自己都不知道哪个是最新的了，这就是版本控制。<br>&emsp;&emsp; 那么你的文件就相当于那些“鸡蛋”，分布式就是你把这些“鸡蛋”放在不同的“篮筐”里，Git就是 <strong>“鸡蛋”+“篮筐”</strong><br>&emsp;&emsp; 既然Git是个软件，就先到<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>官网针对你的操作系统安装对应的版本，博主是在Windows10下安装，其他平台安装可参考其他网站，在Windows下安装，可以一键next，安装后，右击鼠标会出现<code>Git Bash Here</code>和<code>Git GUI Here</code> , 如下图所示：<br><img src="/2019/01/23/Git简介/git_bash.jpg"><br>出现上图的图标，那么恭喜骚年，你安装成功了，后面的话，就会对Git的命令行使用进行解释<br>&emsp;&emsp; 也许，你会觉得我在逗你玩，那不是有GUI吗？干嘛不用GUI却去用了命令行，是不是自讨苦吃啊！但是我说你不觉得用命令行整个逼格就高了吗？<br>&emsp;&emsp; 当然GUI确实入门比较快，如果你很排斥命令行的话，可自行百度<code>Tortoise Git</code>，这个我没有用过但是身边有人用过，反应这个比Git自带的GUI友好些，如果你想更熟练地使用Git，那我还是建议你使用命令行，毕竟Git最初的设计就是在命令行下使用的。在后续的文章我只会介绍Git的命令行操作</p>
+        <p>&emsp;&emsp;在使用Git进行版本管理，有时候一些文件不需要提交，但使用<code>git status</code> 命令后会出现未提示的文件，我们可以用<code>.gitignore</code> 文件对不必要的文件进行屏蔽。<br>&emsp;&emsp;在Windows系统下进行配置<code>.gitignore</code>文件，确实有点难受。首先Windows操作系统下，直接右击鼠标无法新建一个不带文件名的文件，因此我们打开Git命令行，输入<code>touch .gitignore</code>命令你就可以在该文件夹下找到<code>.gitignore</code>文件(其实这是Bash shell下创建一个文件的命令，在介绍<a href="https://groverzhu.github.io/2019/02/07/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8DII/" target="_blank" rel="noopener">Git命令</a>的一篇文章中说过，Git的命令行模式下是一种shell，不信你可以在你的Git命令行模式下输入bash shell的命令，它是可以运行，只不过命令没有那么全而已)，建议用<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">vscode</a>或者其他文本编辑器编辑该文件。下面介绍<code>.gitignore</code> 文件的编写：   </p>
+<h3 id="gitignore中特殊符号："><a href="#gitignore中特殊符号：" class="headerlink" title=".gitignore中特殊符号："></a><strong>.gitignore中特殊符号：</strong></h3><ol>
+<li>“#”相当于程序的注释的标记，“#”后的内容都会被忽略掉；同时空行也会被忽略掉；   </li>
+<li>“/”表示目录，这个实际上是Linux下的目录表示，其中有绝对路径和相对路径的写法，绝对路径的意思是从一个头开始而这个头的表示为<code>/</code>，例如在Windows下你的C盘里有一个Windows目录，那么表示该目录为<code>/c/Windows</code>；相对的路径的意思为从当前目录开始表示为<code>./</code>开头，如果你已经在C盘，则上面目录的表示为<code>./Windows</code>；   </li>
+<li>“*”为通配符，表示可以匹配任意多个字符；</li>
+<li>“?”表示匹配任意单个字符；</li>
+<li>“[]”表示单个字符的匹配列表；</li>
+<li>“!”表示不忽略匹配到的文件或目录。   </li>
+</ol>
+<h3 id="举些例子："><a href="#举些例子：" class="headerlink" title="举些例子："></a><strong>举些例子：</strong></h3><ol>
+<li>忽略指定的文件，比如要忽略readme.md，那么直接在<code>.gitignore</code>文件中编辑<code>readme.md</code>并保存，如要忽略所有后缀为.md的文件可以在<code>.gitignore</code>中编辑为<code>*.md</code>， <code>*</code>号出现表示在<code>.md</code>之前可以出现任意个字符(当文件名中有空格，要用<code>&#39;&#39;</code> 包含起来如<code>&#39;Program Files&#39;/</code>，这是Windows下的操作，一般的类Unix系统文件名都不允许有空格)</li>
+<li>忽略指定文件夹，比如要忽略文件夹bin，则在<code>.gitignore</code>文件编辑<code>bin/</code>,如果是所有文件夹下都要有bin文件夹，并要忽略该文件可编写为<code>*/bin/</code>;</li>
+<li>如果一个文件夹中你只需要其中的一两个，那么可以先忽略该文件夹，再用“!”提出需要的文件，例如你bin文件夹下，你只需要其中的readme.md文件，但它有十来个文件，此时<code>.gitignore</code>文件可编辑为 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bin/</span><br><span class="line">!bin/readme.md</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>&emsp;&emsp;这样<code>.gitignore</code>文件就配置好了，不觉得很麻烦吗？其实早有人就提供相应的’.gitignore’配置文件，找到你要的部分，就可以直接拿来用，可<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">点击查看</a>。在开启一个工程的时候，一定要去配置一下<code>.gitignore</code>文件，一个项目里面有部分文件是跟本地配置相关的，不应该添加到Git的管理中，不同的电脑，本地配置也会不一致，每个人都提交到Git中就会造成混乱。</p>
 
       
     </div>
@@ -377,8 +382,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/22/SQL练习/" rel="next" title="SQL练习">
-                <i class="fa fa-chevron-left"></i> SQL练习
+              <a href="/2019/03/15/Git常用命令介绍IV/" rel="next" title="Git常用命令介绍Ⅳ">
+                <i class="fa fa-chevron-left"></i> Git常用命令介绍Ⅳ
               </a>
             
           </div>
@@ -386,10 +391,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/24/Git常用命令介绍1/" rel="prev" title="Git常用命令介绍Ⅰ">
-                Git常用命令介绍Ⅰ <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -443,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -497,6 +507,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#gitignore中特殊符号："><span class="nav-number">1.</span> <span class="nav-text">.gitignore中特殊符号：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#举些例子："><span class="nav-number">2.</span> <span class="nav-text">举些例子：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
