@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。&amp;emsp;&amp;emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分">
+<meta name="description" content="前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。    什么是分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分支就是master分支，一般叫做主分支">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git常用命令介绍Ⅳ">
 <meta property="og:url" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/index.html">
 <meta property="og:site_name" content="GroverZhu">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。&amp;emsp;&amp;emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分">
+<meta property="og:description" content="前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。    什么是分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分支就是master分支，一般叫做主分支">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/01.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/02.jpg">
@@ -96,10 +96,10 @@
 <meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/07.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/08.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/09.jpg">
-<meta property="og:updated_time" content="2019-03-17T01:48:58.000Z">
+<meta property="og:updated_time" content="2019-08-31T04:17:52.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常用命令介绍Ⅳ">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。&amp;emsp;&amp;emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分">
+<meta name="twitter:description" content="前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。    什么是分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分支就是master分支，一般叫做主分支">
 <meta name="twitter:image" content="http://yoursite.com/2019/03/15/Git常用命令介绍IV/01.jpg">
 
 
@@ -325,7 +325,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5 分钟
+                  4 分钟
                 </span>
               
             </div>
@@ -346,12 +346,32 @@
       
 
       
-        <p>&emsp;&emsp;前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。<br>&emsp;&emsp;什么分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分支就是master分支，一般叫做主分支。<br><img src="/2019/03/15/Git常用命令介绍IV/01.jpg"><br>&emsp;&emsp;那么你要创建自己的分支可以使用<code>git branch 分支名</code>， 创建你的分支，再通过<code>git checkout 分支名</code> 来切换到你的分支。也可以使用<code>git checkout -b 分支名</code>直接新建并进入新的分支。<br><img src="/2019/03/15/Git常用命令介绍IV/02.jpg"><br>&emsp;&emsp;创建一个分支的话，是在你当前所在这个分支的基础上，创建一个跟你当前所在分支一模一样的分支，后续的修改之类的分支互不影响。<br>&emsp;&emsp;可以通过<code>git branch</code>查看当前项目的所有分支，前面带*号的就是当前所在的分支<br><img src="/2019/03/15/Git常用命令介绍IV/03.jpg"><br>&emsp;&emsp;如果有个分支不需要了，那么，使用<code>git branch -d 分支名</code>删除分支，如果有特殊情况，要强制删除掉某一分支，使用<code>git branch -D 分支名</code>。切记不能在当前分支删除当前分支，必须切换到别的分支再执行删除操作。<br><img src="/2019/03/15/Git常用命令介绍IV/04.jpg"><br>&emsp;&emsp;与树杈不同的是，树杈一个分支分出去之后，就不会回来，但是Git的分支可以合并到任意一个分支。Git的合并是将一个分支合并到当前分支里面。一般有两种合并方式：   </p>
+        <p>前面讲了那么多的Git操作，都是在同一个分支里面操作的，没有体现出来分布式的概念，那么Git的分布式是怎样的呢？Git的分布式主要体现在分支(branch)上，那么下面就详细介绍branch的相关操作。   </p>
+<p>什么是分支，你可以看树杈，它有多个分支，Git的分支也是这样的，一个主分支，可以有多个其他分支。在建立一个Git仓库的时候，你就在一个分支里面了，那个分支就是master分支，一般叫做主分支。<br><img src="/2019/03/15/Git常用命令介绍IV/01.jpg">   </p>
+<p>那么你要创建自己的分支可以使用<code>git branch 分支名</code>， 创建你的分支，再通过<code>git checkout 分支名</code> 来切换到你的分支。也可以使用<code>git checkout -b 分支名</code>直接新建并进入新的分支。<br><img src="/2019/03/15/Git常用命令介绍IV/02.jpg">   </p>
+<p>创建一个分支的话，是在你当前所在这个分支的基础上，创建一个跟你当前所在分支一模一样的分支，后续的修改之类的分支互不影响。   </p>
+<p>可以通过<code>git branch</code>查看当前项目的所有分支，前面带*号的就是当前所在的分支<br><img src="/2019/03/15/Git常用命令介绍IV/03.jpg">   </p>
+<p>如果有个分支不需要了，那么，使用<code>git branch -d 分支名</code>删除分支，如果有特殊情况，要强制删除掉某一分支，使用<code>git branch -D 分支名</code>。切记不能在当前分支删除当前分支，必须切换到别的分支再执行删除操作。<br><img src="/2019/03/15/Git常用命令介绍IV/04.jpg">   </p>
+<p>与树杈不同的是，树杈一个分支分出去之后，就不会回来，但是Git的分支可以合并到任意一个分支。Git的合并是将一个分支合并到当前分支里面。一般有两种合并方式：   </p>
 <ol>
-<li><code>git merge 分支名</code>，这个合并可以保留分支来源。</li>
+<li><code>git merge 分支名</code>，这个合并可以保留分支来源。   </li>
 <li><code>git rebases 分支名</code>，将要合并的分支中新的内容直接加在当前分支后面，不会保留分支来源。   </li>
 </ol>
-<p>&emsp;&emsp;一般团队合作的话，使用<code>git merge</code>这样就可以追根溯源了，个人的话可以使用<code>git rebase</code>，这样可以使提交记录更加简洁。<br>&emsp;&emsp;同时分支也会带来冲突问题，如果两个分支同时处理一个文件，那么就会产生冲突，需要我们手动解决。<br>&emsp;&emsp;有冲突的话，Git会有提示，会在分支名的后面标<strong>MERGING</strong><br><img src="/2019/03/15/Git常用命令介绍IV/05.jpg"><br>&emsp;&emsp; 打开有冲突的文件，可以看到文件文件里面，Git都标出来了那边有冲突，<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>到<code>======</code>表示当前分支在这个文件的修改，<code>=======</code>到<code>&gt;&gt;&gt;&gt;&gt;&gt;分支名</code>表示这个这个分支对这个文件的修改，根据需要修改冲突后，再使用<code>git add</code>和<code>git commit</code>的命令之后就可以了。<br><img src="/2019/03/15/Git常用命令介绍IV/06.jpg"> <img src="/2019/03/15/Git常用命令介绍IV/07.jpg"><br>&emsp;&emsp;这样本地分支常用的操作就是这些了。剩下的就是远程的，远程的操作主要有：与远程主机创建连接，上传新的内容，从远程主机获取新的内容。<br>&emsp;&emsp;与远程主机建立连接有两种协议：SSH 和 HTTPS，这两个具体协议的区别可以自己去查询，这里只介绍如何再这两种不同的协议建立连接。<br>&emsp;&emsp;首先，HTTPS的连接方式比较简单，只需要使用<code>git clone 地址连接</code>，会让你输入账号和密码，在之后的提交中，可能你每次的提交到远程主机上都需要输入一次账号和密码，就显得有些麻烦了。<br>&emsp;&emsp;使用SSH协议，不过，你需要先生成SSH密钥，使用<code>ssh-keygen -t rsa -C 邮箱</code>，邮箱一定是你在某一平台上的注册账号留下的邮箱。后面会有让你输入，直接按‘Enter’键。上面会有生成密钥的文件目录。<br><img src="/2019/03/15/Git常用命令介绍IV/08.jpg"><br>&emsp;&emsp;之后去那个目录里面，会有一个id_rsa.pub，打开此文件，将里面的内容粘贴到相应平台设置SSH的地方，这样远程主机就能识别出你使用的这台电脑了。<br><img src="/2019/03/15/Git常用命令介绍IV/09.jpg"><br>&emsp;&emsp;与远程主机建立联系的话，如果你是现在远程主机上建立的项目，本地是空的话，可以直接使用<code>git clone</code>把项目拷贝下来。如果是本地已经有一个项目了，要放在远程主机的话，现在远程主机上建立一个空的项目，然后使用<code>git remote add 远程主机名 远程链接</code>，一般远程主机名使用origin，这样就建立好了远程联系了。<br>&emsp;&emsp;一般第一次提交的话，使用<code>git push -u origin master</code>，后续的提交的话就可以直接用<code>git push 远程主机名 本地分支名</code>，这个命令的完整格式是：<code>git push 远程主机名 本地分支名:远程分支名</code>，一般而言，远程分支名与本地分支名一致，这样便于管理。如果删除远程的一个分支的话，本地分支名就不用写了，即<code>git push 远程主机名 :远程分支名</code><br>&emsp;&emsp;从远程分支获取更新但不合并： <code>git fetch 远程主机名 远程分支名</code><br>&emsp;&emsp;从远程分支获取更新并合并：<code>git pull 远程主机名 远程分支名:本地分支名</code><br>&emsp;&emsp;上述就是Git分支的主要操作，相信你熟悉了这写操作之后就可以使用Git进行团队开发了。(注意命令中的<code>:</code>为英文的字符)</p>
+<p>一般团队合作的话，使用<code>git merge</code>这样就可以追根溯源了，个人的话可以使用<code>git rebase</code>，这样可以使提交记录更加简洁。   </p>
+<p>同时分支也会带来冲突问题，如果两个分支同时处理一个文件，那么就会产生冲突，需要我们手动解决。   </p>
+<p>有冲突的话，Git会有提示，会在分支名的后面标<strong>MERGING</strong><br><img src="/2019/03/15/Git常用命令介绍IV/05.jpg">   </p>
+<p>打开有冲突的文件，可以看到文件文件里面，Git都标出来了那边有冲突，<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>到<code>======</code>表示当前分支在这个文件的修改，<code>=======</code>到<code>&gt;&gt;&gt;&gt;&gt;&gt;分支名</code>表示这个这个分支对这个文件的修改，根据需要修改冲突后，再使用<code>git add</code>和<code>git commit</code>的命令之后就可以了。<br><img src="/2019/03/15/Git常用命令介绍IV/06.jpg"> <img src="/2019/03/15/Git常用命令介绍IV/07.jpg">   </p>
+<p>这样本地分支常用的操作就是这些了。剩下的就是远程的，远程的操作主要有：与远程主机创建连接，上传新的内容，从远程主机获取新的内容。   </p>
+<p>与远程主机建立连接有两种协议：SSH 和 HTTPS，这两个具体协议的区别可以自己去查询，这里只介绍如何再这两种不同的协议建立连接。   </p>
+<p>首先，HTTPS的连接方式比较简单，只需要使用<code>git clone 地址连接</code>，会让你输入账号和密码，在之后的提交中，可能你每次的提交到远程主机上都需要输入一次账号和密码，就显得有些麻烦了。   </p>
+<p>使用SSH协议，不过，你需要先生成SSH密钥，使用<code>ssh-keygen -t rsa -C 邮箱</code>，邮箱一定是你在某一平台上的注册账号留下的邮箱。后面会有让你输入，直接按‘Enter’键。上面会有生成密钥的文件目录。<br><img src="/2019/03/15/Git常用命令介绍IV/08.jpg">   </p>
+<p>之后去那个目录里面，会有一个id_rsa.pub，打开此文件，将里面的内容粘贴到相应平台设置SSH的地方，这样远程主机就能识别出你使用的这台电脑了。<br><img src="/2019/03/15/Git常用命令介绍IV/09.jpg">   </p>
+<p>与远程主机建立联系的话，如果你是现在远程主机上建立的项目，本地是空的话，可以直接使用<code>git clone</code>把项目拷贝下来。如果是本地已经有一个项目了，要放在远程主机的话，现在远程主机上建立一个空的项目，然后使用<code>git remote add 远程主机名 远程链接</code>，一般远程主机名使用origin，这样就建立好了远程联系了。   </p>
+<p>一般第一次提交的话，使用<code>git push -u origin master</code>，后续的提交的话就可以直接用<code>git push 远程主机名 本地分支名</code>，这个命令的完整格式是：<code>git push 远程主机名 本地分支名:远程分支名</code>，一般而言，远程分支名与本地分支名一致，这样便于管理。如果删除远程的一个分支的话，本地分支名就不用写了，即<code>git push 远程主机名 :远程分支名</code>   </p>
+<blockquote>
+<p>从远程分支获取更新但不合并： <code>git fetch 远程主机名 远程分支名</code><br>从远程分支获取更新并合并：<code>git pull 远程主机名 远程分支名:本地分支名</code>   </p>
+</blockquote>
+<p>上述就是Git分支的主要操作，相信你熟悉了这写操作之后就可以使用Git进行团队开发了。(注意命令中的<code>:</code>为英文的字符)</p>
 
       
     </div>
@@ -466,7 +486,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -479,7 +499,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -538,7 +558,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">10.7k</span>
+    <span title="Site words total count">11k</span>
   
 </div>
 
@@ -549,6 +569,15 @@
 
 
 
+
+
+
+  <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize("");
+    }
+  </script>
 
         
 <div class="busuanzi-count">
